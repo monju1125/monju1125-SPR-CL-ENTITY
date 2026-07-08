@@ -22,9 +22,10 @@ import java.util.Objects;
  */
 
 // @TODO - Add an annotation to indicate that this class is mapped to a relation in the database:
+@Entity
 public class Product {
     // TODO - Add an annotation to indicate that this field is the primary key for the corresponding relation:
-    @org.springframework.data.annotation.Id
+    @Id
     private long productID;
     private String name;
     private String description;
